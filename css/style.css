@@ -5,122 +5,68 @@
   letter-spacing: 0.04rem;
 }
 
-.login {
+.navbar {
+  padding: 10px 200px;
   background-color: #0b377a;
-  height: auto;
-  padding: 0 180px;
+  display: grid;
+  grid-template-columns: 250px auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.brand {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+
+.brand img {
+  margin-right: 1rem;
+}
+
+.brand p {
+  font-weight: lighter;
+  font-style: italic;
+  color: #fff;
 }
 
 .login ul li {
-  display: inline-flex;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .login ul li a {
   color: #fff;
-  padding: 0.8rem 1rem;
+  font-size: 1rem;
   transition: 0.5s ease;
-  font-weight: 300;
 }
 
 .login ul li a:hover {
-  color: #fdfdfd;
-  background-color: #092f68;
+  color: #e4edfa;
 }
 
-.login ul li a i {
-  margin-right: 8px;
-}
-
-.main-nav {
-  padding-top: 10px;
-  padding-bottom: 100px;
-  background-color: transparent;
-  right: 0;
-  height: auto;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-nav ul li {
-  display: inline-flex;
+.login ul li:last-child {
+  background-color: #ffffff;
   padding: 0.8rem 1rem;
-}
-
-.main-nav ul li a {
-  color: #fff;
-  transition: 0.3s ease;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  color: #072655;
   font-weight: bold;
-  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-.main-nav ul li a:hover {
-  transform: scale(1.085);
+.login ul li:last-child:hover {
+  background-color: #e4edfa;
 }
 
 .header {
-  padding: 0 180px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(22, 72, 149, 0.875),
-      rgba(19, 66, 140, 0.875),
-      rgba(15, 60, 131, 0.875),
-      rgba(11, 55, 122, 0.875),
-      rgba(7, 49, 113, 0.875)
-    ),
-    url(../img/bg-header.jpg);
+  padding: 80px 200px;
+  background: url(../img/cristo-bg.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-}
-
-.header {
-  color: #fff;
-}
-
-.header h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  max-width: 700px;
-}
-
-.header h2 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.btn-group {
-  width: 305px;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
-}
-
-.btn {
-  border: 2px solid #e85d04;
-  padding: 0.8rem;
-  border-radius: 10px;
-  background-color: #f48c06;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 400;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.btn:nth-child(2) {
-  background-color: #0b377a;
-  color: #fff;
-}
-
-.btn:hover {
-  background-color: #e85d04;
-  color: #fff;
 }
 
 .title-section {
@@ -128,7 +74,7 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  padding: 0 0 3rem 0;
+  padding: 0 0 1rem 0;
   color: #0b377a;
 }
 
@@ -143,6 +89,47 @@
   transform: skewX(40deg);
 }
 
+.grid-news {
+  display: grid;
+  grid-template-columns: 800px 1fr;
+  grid-gap: 20px;
+  position: relative;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 420px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 70px;
+  left: 32%;
+}
+
+.carousel-dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #e85d04;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.aside-news {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px 200px auto;
+  grid-gap: 20px;
+}
+
 .alt-title {
   color: #fff;
 }
@@ -152,32 +139,8 @@
   background-color: #ffffff;
 }
 
-.news {
-  padding: 80px 180px;
-  background-color: #fcfcfc;
-}
-
-.carousel {
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
-.carousel img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.list-news {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 20px;
-  justify-content: space-between;
-}
-
 .new {
   width: auto;
-  height: auto;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
