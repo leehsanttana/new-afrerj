@@ -54,19 +54,57 @@
   color: #072655;
   font-weight: bold;
   cursor: pointer;
+  margin-right: 0;
 }
 
 .login ul li:last-child:hover {
   background-color: #e4edfa;
 }
 
+.sign-in-section {
+  padding: 20px 200px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  justify-content: end;
+}
+
+.btn-afrerj,
+.btn-amafrerj {
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.btn-afrerj {
+  background-color: #092f68;
+}
+
+.btn-afrerj:hover {
+  background-color: #072655;
+  transform: scale(0.985);
+}
+
+.btn-amafrerj {
+  background-color: #00a100;
+}
+
+.btn-amafrerj:hover {
+  background-color: #008000;
+  transform: scale(0.985);
+}
+
 .header {
-  padding: 80px 200px;
+  padding: 40px 200px 80px 200px;
   background: url(../img/cristo-bg.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 }
 
 .title-section {
@@ -103,7 +141,7 @@
 
 .carousel-slide img {
   width: 100%;
-  height: 420px;
+  height: 470px;
   border-radius: 20px;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
 }
@@ -126,7 +164,7 @@
 .aside-news {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 200px 200px auto;
+  grid-template-rows: auto auto auto;
   grid-gap: 20px;
 }
 
@@ -139,7 +177,7 @@
   background-color: #ffffff;
 }
 
-.new {
+.news {
   width: auto;
   border-radius: 20px;
   background-color: #fff;
@@ -147,21 +185,21 @@
   transition: 0.3s ease;
 }
 
-.new:hover {
+.news:hover {
   transform: scale(0.975);
 }
 
-.new img {
+.news img {
   display: block;
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
 
-.new-content {
+.news-content {
   padding: 0.8rem;
 }
 
-.new .categoria {
+.news .categoria {
   display: block;
   background-color: #00a100;
   width: 90px;
@@ -173,11 +211,11 @@
   color: #fff;
 }
 
-.new .data-new {
+.news .data-new {
   font-size: 0.7rem;
 }
 
-.new-title {
+.news-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 1rem 0;
@@ -187,18 +225,18 @@
   color: #f48c06;
 }
 
-.new-link {
+.news-link {
   font-size: 0.9rem;
   font-weight: lighter;
   color: #f48c06;
 }
 
 .title-link:hover,
-.new-link:hover {
+.news-link:hover {
   color: #e85d04;
 }
 
-.new p {
+.news p {
   font-size: 0.9rem;
   padding-bottom: 0.3rem;
 }
@@ -216,37 +254,93 @@
   text-decoration: underline;
 }
 
-.sobre {
-  padding: 80px 180px;
-  background-color: #0b377a;
+.section-amafrerj {
+  background-color: #fafafa;
+  padding: 30px 200px 80px 200px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 650px 1fr;
-  grid-gap: 40px;
+.h3-amafrerj {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2rem 0;
 }
 
-.grid-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+.nav-amafrerj li {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-amafrerj li a {
   color: #fff;
+  padding: 0.9rem;
+  background-color: #00a100;
+  transition: 0.5s ease;
+  border-radius: 10px;
 }
 
-.grid-container p {
-  color: #fff;
-  margin-bottom: 2rem;
-  font-weight: 300;
+.nav-amafrerj li a:hover {
+  background-color: #008000;
 }
 
-.grid-container .btn {
-  font-size: 1rem;
-}
-
-.grid-container img {
+.info-amafrerj {
   width: 100%;
-  height: auto;
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  grid-gap: 20px;
+}
+
+.section-info-amafrerj img {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.duvidas-info-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+}
+
+.duvidas-info-amafrerj {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.duvidas-info-amafrerj h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00a100;
+  margin-bottom: 1rem;
+}
+
+.duvidas-info-amafrerj div {
+  display: grid;
+  justify-content: start;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+}
+
+.duvidas-info-amafrerj i {
+  font-size: 3rem;
+}
+
+.duvidas-info-amafrerj p {
   display: block;
+  max-width: 200px;
+}
+
+.duvidas-info-amafrerj a {
+  display: block;
+  margin-top: 1rem;
+  color: #00a100;
+}
+
+.duvidas-info-amafrerj a:hover {
+  color: #008000;
 }
 
 .beneficios {
