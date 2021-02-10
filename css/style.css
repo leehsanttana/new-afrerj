@@ -343,60 +343,70 @@
   color: #008000;
 }
 
-.beneficios {
+.afrerj-section {
   padding: 80px 180px;
   background-color: #fcfcfc;
 }
 
-.beneficios p {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.services-list {
+.afrerj-section-info {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 700px 300px;
   justify-content: space-between;
   grid-gap: 20px;
-  margin-bottom: 4rem;
 }
 
-.service {
-  width: 240px;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease;
-}
-
-.service:hover {
-  transform: translate3d(0, -20px, 0);
-}
-
-.service .image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #0b377a;
-  margin: 0 auto 1rem;
-}
-
-.green {
-  color: #00a100;
-}
-
-.service h4 {
+.afrerj-section-sobre h3 {
   font-size: 1.2rem;
   font-weight: bold;
+  color: #092f68;
+  margin-bottom: 2rem;
+}
+
+.afrerj-section-sobre p {
   margin-bottom: 1rem;
+}
+
+.afrerj-section-sobre a {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.afrerj-section-servicos h4 {
+  font-size: 1.2rem;
+  color: #092f68;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.afrerj-section-servicos ul li {
+  display: block;
+  padding: 1rem;
+  background-color: #092f68;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.afrerj-section-servicos ul li:hover {
+  background-color: #072655;
+  transform: scale(0.985);
+}
+
+.afrerj-section-convenios h3 {
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  color: #092f68;
 }
 
 .parcerias-nav li {
   display: inline-block;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: #f48c06;
   border: 2px solid #e85d04;
   border-radius: 10px;
@@ -437,9 +447,6 @@
 }
 
 .parceria {
-  border: 2px solid #f48c06;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
   width: 200px;
 }
 
