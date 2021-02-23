@@ -5,6 +5,29 @@
   letter-spacing: 0.04rem;
 }
 
+body p {
+  font-size: 1.2rem;
+}
+
+body h1 {
+  font-size: 3rem;
+}
+
+body h2 {
+  font-size: 1.8rem;
+}
+
+body h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #092f68;
+}
+
+body h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .modal-menu {
   position: fixed;
   z-index: 600;
@@ -47,13 +70,6 @@
   text-align: center;
   margin: 1rem 0;
   color: #fff;
-}
-
-.main-menu h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #fff;
-  padding: 1rem;
 }
 
 .main-menu-afrerj {
@@ -189,7 +205,6 @@
 }
 
 .title-section {
-  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 0 1rem 0;
@@ -202,6 +217,20 @@
   width: 80px;
   height: 4px;
   background-color: #0b377a;
+  margin: 0.5rem 0;
+}
+
+.title-amafrerj {
+  color: #00a100;
+}
+
+.title-amafrerj::before,
+.title-amafrerj::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  background-color: #00a100;
   margin: 0.5rem 0;
 }
 
@@ -336,10 +365,8 @@
 }
 
 .afrerj-section-sobre h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
+  margin-bottom: 1rem;
   color: #092f68;
-  margin-bottom: 2rem;
 }
 
 .afrerj-section-sobre p {
@@ -354,7 +381,6 @@
 }
 
 .afrerj-section-servicos h4 {
-  font-size: 1.2rem;
   color: #092f68;
   margin-bottom: 2rem;
   text-align: center;
@@ -379,8 +405,6 @@
 
 .afrerj-section-convenios h3 {
   margin: 3rem 0;
-  font-size: 1.2rem;
-  color: #092f68;
 }
 
 .parcerias-nav li {
@@ -446,8 +470,6 @@
 }
 
 .h3-amafrerj {
-  font-size: 1.2rem;
-  font-weight: bold;
   margin: 2rem 0;
 }
 
@@ -497,8 +519,6 @@
 }
 
 .duvidas-info-amafrerj h4 {
-  font-weight: bold;
-  font-size: 1.2rem;
   color: #00a100;
   margin-bottom: 1rem;
 }
@@ -530,7 +550,6 @@
 }
 
 .h3-footer {
-  font-size: 1.5rem;
   margin: 4rem 0 2rem 0;
   text-align: center;
   text-transform: uppercase;
@@ -572,10 +591,8 @@
 }
 
 .social-card h4 {
-  font-size: 1.2rem;
   text-align: center;
   color: #092f68;
-  font-weight: bold;
 }
 
 .social-card a {
@@ -754,7 +771,7 @@
 }
 
 .option-login h3 {
-  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .option-login:hover {
@@ -880,3 +897,45 @@ textarea:focus {
   margin-top: 1rem;
   float: right;
 } */
+
+/* ESTILO DA PAGINA POSTAGEM */
+
+.img-news {
+  padding: 50px 200px;
+}
+
+.img-news img {
+  max-width: 100%;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.title-news {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #092f68;
+}
+
+.subtitle-news {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.section-news {
+  padding: 0 200px 60px 200px;
+  display: grid;
+  grid-template-columns: auto 400px;
+  grid-gap: 20px;
+  justify-content: space-between;
+  background: #fcfcfc;
+}
+
+.section-news p {
+  margin-bottom: 2rem;
+}
+
+.section-news img {
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
