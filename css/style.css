@@ -595,13 +595,16 @@
   padding: 60px 180px;
   background-color: #072655;
   color: #fff;
+}
+
+.info-footer {
   display: grid;
   grid-template-columns: 400px 1fr auto;
   grid-gap: 40px;
   justify-content: space-between;
 }
 
-.footer img {
+.logo {
   width: 70px;
   display: block;
   margin-bottom: 1rem;
@@ -677,6 +680,18 @@
 .section-social-footer li:nth-child(3) a:hover {
   color: #fff;
   background-color: #0ab32f;
+}
+
+.grid-orgs {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.grid-orgs img {
+  border-radius: 10px;
 }
 
 .modal-login {
